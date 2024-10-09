@@ -1,0 +1,295 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-image: url('bg.avif');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, 0.9);
+    border: 1px solid #ccc;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+header {
+    background-color: #8a6d3b;
+    color: white;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+nav ul {
+    background-color: #ccc;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start; 
+    padding: 10px 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #8a6d3b;
+}
+
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+
+.main {
+    width: 65%;
+    margin-bottom: 20px;
+}
+
+.main article {
+    margin-bottom: 20px;
+}
+
+.main img {
+    width: 50%;
+    height: auto;
+    border: 1px solid #ccc;
+    border-radius: 5%;
+    display: block;
+   
+}
+
+.main h2 {
+    margin: 10px 0;
+    color: #8a6d3b;
+    font-size: 34px;
+}
+
+
+.main .text   {
+    font-size: 23px;
+    color: #000000;
+    transition: color 0.3s ease;
+    
+}
+
+.text:hover {
+    color: #8a6d3b;
+}
+
+.main p {
+    margin: 5px 0;
+    line-height: 1.5;
+    font-size: 20px;
+}
+
+aside {
+    width: 30%;
+}
+
+.popular, .contact {
+    margin-bottom: 20px;
+}
+
+.popular h3, .contact h3 {
+    background-color: #8a6d3b;
+    color: white;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.popular ul {
+    list-style: none;
+    padding: 0;
+}
+
+.popular ul li {
+    margin-bottom: 5px;
+}
+
+.popular ul li a {
+    text-decoration: none;
+    color: #8a6d3b;
+    transition: color 0.3s ease;
+}
+
+.popular ul li a:hover {
+    color: #555;
+}
+
+.contact p {
+    background-color: #eee;
+    padding: 10px;
+    border: 1px solid #ccc;
+    
+}
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background-color: #ccc;
+    color: #333;
+}
+
+
+@media (max-width: 768px) {
+
+    .main img{
+        width: 40%;
+    }
+
+    .main .text{
+        font-size: 22px;
+    }
+
+    nav ul {
+        flex-wrap: nowrap; 
+    }
+
+    nav ul li {
+        margin: 0 8px; 
+    }
+
+    nav ul li a {
+        font-size: 16px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .main, aside {
+        width: 100%;
+    }
+
+    header h1 {
+        font-size: 28px;
+    }
+
+    .main h2 {
+        font-size: 28px;
+    }
+}
+
+
+@media (max-width: 480px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 12px; 
+    }
+
+    .main .text{
+        font-size: 15px;
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .main p{
+        font-size: 12px;
+    }
+    .popular h3, .contact h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 425px) {
+    header h1 {
+        font-size: 25px;
+    }
+
+    nav ul li a {
+        font-size: 13px; 
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .popular h3, .contact h3 {
+        font-size: 13px;
+    }
+
+    .popular li {
+        font-size: 11px;
+    }
+
+    .contact p {
+        font-size: 11px;
+    }
+
+    footer{
+        font-size: 11px;
+    }
+}
+
+@media (max-width: 375px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 10px; 
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .popular h3, .contact h3 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 320px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    nav ul li a {
+        font-size: 8px; 
+    }
+
+    .main h2 {
+        font-size: 18px;
+    }
+
+    .popular h3, .contact h3 {
+        font-size: 16px;
+    }
+}
